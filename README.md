@@ -11,9 +11,7 @@ StrmFastPlay 是 Jellyfin STRM 起播加速插件，支援各大網盤搭配 Ope
 
 ## 下載
 
-請到 Releases 下載：
-
-[StrmFastPlay.zip](https://github.com/SkillGodAk/StrmFastPlay/releases/latest/download/StrmFastPlay.zip)
+[前往 Releases 下載](https://github.com/SkillGodAk/StrmFastPlay/releases)
 
 ## 安裝
 
