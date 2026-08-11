@@ -1,18 +1,13 @@
 # StrmFastPlay
 
-StrmFastPlay 是 Jellyfin STRM 起播加速插件，目標是讓 STRM 播放前等待時間更短，盡量達到秒播效果。
+StrmFastPlay 是 Jellyfin STRM 起播加速插件，支援各大網盤搭配 OpenList、AList 使用，縮短播放前等待時間，盡量達到秒播效果。
 
-適用於 OpenList、AList、WebDAV、HTTP 302 直鏈、各類網盤 STRM 來源。
+## 使用說明
 
-## 重要說明
-
-StrmFastPlay 主要加速 Jellyfin 播放前等待，不是網盤加速器。
-
-如果 OpenList / AList 網頁內播放本身就很慢、不能播放、拖進度條會卡，Jellyfin STRM 也可能無法秒播。
-
-拖進度條是否順暢，主要看網盤直鏈的 Range / seek 速度。PikPak 目前最穩，通常可在 5 秒內起播；迅雷、夸克等來源會依當下直鏈速度而不同。
-
-內嵌軟字幕影片通常比硬字幕影片更吃來源速度。若來源拖拉很慢，軟字幕影片拖進度條也可能比較慢。
+- OpenList / AList 網頁內播放越快，Jellyfin STRM 越容易秒播；若來源本身很慢或無法播放，插件也無法改善網盤速度。
+- 目前實測 PikPak 最穩定，通常可在 5 秒內起播，其他網盤會依來源當下速度而不同。
+- 內嵌軟字幕需要額外載入字幕，起播可能比硬字幕稍慢。
+- 影片已燒入硬字幕時不需另外載入字幕，來源順暢即可更容易達到秒播。
 
 ## 下載
 
@@ -26,12 +21,6 @@ StrmFastPlay 主要加速 Jellyfin 播放前等待，不是網盤加速器。
 
 ```text
 jellyfin/config/plugins/StrmFastPlay/
-```
-
-資料夾內應包含：
-
-```text
-Jellyfin.Plugin.StrmFastPlay.dll
 ```
 
 安裝後重新啟動 Jellyfin。
