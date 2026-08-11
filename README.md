@@ -48,9 +48,3 @@ Jellyfin.Plugin.StrmFastPlay.dll
 
 - 微信：MONflykeep
 - LINE：flykeep
-
-## 相容性
-
-插件不會寫死只能在單一 Jellyfin 版本使用。
-
-Jellyfin 更新後，如果核心播放結構仍相容，插件會繼續使用；如果 Jellyfin 改動太大，插件會安全跳過加速，不會讓 Jellyfin 無法啟動。
