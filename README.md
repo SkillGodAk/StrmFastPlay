@@ -23,6 +23,8 @@ jellyfin/config/plugins/StrmFastPlay/
 
 安裝後重新啟動 Jellyfin。
 
+建議安裝完成後，前往「控制台 → 已排程的工作」，手動執行一次 StrmFastPlay 的「提取 STRM 媒體資訊」。
+
 ## 試用與價格
 
 首次安裝可免費試用 3 天。試用結束後需輸入授權碼。
