@@ -27,13 +27,13 @@ StrmFastPlay 是 Jellyfin STRM 起播加速插件，支援各大網盤搭配 Ope
 
 ## 安裝
 
-下載 Releases 裡的 `StrmFastPlay.zip`，解壓縮到 Jellyfin 插件目錄：
+下載 Releases 裡的 `StrmFastPlay.zip`，將 ZIP 內的 DLL 與 `meta.json` 一起解壓縮並完整覆蓋到 Jellyfin 插件目錄：
 
 ```text
 jellyfin/config/plugins/StrmFastPlay/
 ```
 
-安裝後重新啟動 Jellyfin。
+ZIP 內的 DLL 與 `meta.json` 兩個檔案都必須安裝。完成後請完整重新啟動 Jellyfin；Docker 使用者需重新啟動 Jellyfin 容器。
 
 建議安裝完成後，前往「控制台 → 已排程的工作」，手動執行一次 StrmFastPlay 的「提取 STRM 媒體資訊」。
 
