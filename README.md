@@ -9,6 +9,12 @@ StrmFastPlay 是 Jellyfin STRM 起播加速插件，支援各大網盤搭配 Ope
 - 影片使用內嵌軟字幕或外掛字幕時，需要額外載入字幕，因此起播速度通常會比硬字幕稍慢。
 - 影片已燒入硬字幕時，不需要另外載入字幕；只要來源順暢，就更容易達到秒播效果。
 
+## PikPak 邀請碼
+
+使用 PikPak 時輸入邀請碼，可獲得額外會員天數。
+
+**邀請碼：`34544273`**
+
 ## 下載
 
 [前往 Releases 下載](https://github.com/SkillGodAk/StrmFastPlay/releases)
