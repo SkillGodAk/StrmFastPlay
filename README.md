@@ -43,5 +43,5 @@ jellyfin/config/plugins/StrmFastPlay/
 
 購買方式請聯絡作者：
 
-- 微信：MONflykeep
-- LINE：flykeep
+- QQ 群：1018495751
+- TG 群：[點此加入並聯絡作者](https://t.me/+l1v_7ag4mJQ3NjI1)
