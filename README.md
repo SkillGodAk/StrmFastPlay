@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/strmfastplay-logo.png" alt="StrmFastPlay" width="760">
+</p>
+
 # StrmFastPlay
 
 StrmFastPlay 是 Jellyfin STRM 起播加速插件，支援各大網盤搭配 OpenList、AList 使用，縮短播放前等待時間，盡量達到秒播效果。
