@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StrmFastPlay — Jellyfin STRM 起播加速插件</title>
+<meta name="description" content="StrmFastPlay 是 Jellyfin STRM 起播加速插件，適用 OpenList、AList、PikPak、夸克網盤、迅雷網盤與遠端媒體 STRM，改善點擊播放後的等待時間。">
+<meta name="keywords" content="Jellyfin STRM,Jellyfin STRM slow startup,Jellyfin playback speed,OpenList,AList,PikPak,夸克網盤,Quark Cloud Drive,迅雷網盤,Xunlei,Thunder Cloud Drive,Jellyfin plugin,STRM acceleration,remote media">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://skillgodak.github.io/StrmFastPlay/">
+<meta property="og:title" content="StrmFastPlay — Jellyfin STRM Fast Playback Plugin">
+<meta property="og:description" content="Improve Jellyfin STRM startup for OpenList, AList, PikPak and remote media libraries.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://skillgodak.github.io/StrmFastPlay/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"StrmFastPlay",
+  "applicationCategory":"MultimediaApplication",
+  "operatingSystem":"Jellyfin Server",
+  "description":"Commercial Jellyfin plugin that improves STRM startup for OpenList, AList, PikPak and remote media libraries.",
+  "url":"https://github.com/SkillGodAk/StrmFastPlay",
+  "downloadUrl":"https://github.com/SkillGodAk/StrmFastPlay/releases",
+  "offers":{"@type":"Offer","price":"5","priceCurrency":"CNY"}
+}
+</script>
+<style>
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:900px;margin:auto;padding:40px 22px;line-height:1.7;color:#171717}
+h1,h2{line-height:1.2}.cta{display:inline-block;padding:10px 16px;border:1px solid #222;border-radius:8px;text-decoration:none;color:#111;margin-right:8px}
+.card{background:#f6f7f8;border-radius:12px;padding:18px;margin:18px 0}.muted{color:#666}
+</style>
+</head>
+<body>
+<h1>StrmFastPlay</h1>
+<p><strong>Jellyfin STRM 起播加速插件</strong></p>
+<p>針對 OpenList / AList、PikPak、夸克網盤、迅雷網盤與其他遠端媒體 STRM 場景，改善點擊播放後的等待時間。</p>
+<p><a class="cta" href="https://github.com/SkillGodAk/StrmFastPlay">GitHub</a><a class="cta" href="https://github.com/SkillGodAk/StrmFastPlay/releases">下載</a></p>
+
+<div class="card">
+<h2>主要功能</h2>
+<p>最佳化 Jellyfin STRM 播放流程，降低遠端媒體的起播等待；支援 OpenList / AList 直鏈與 302 使用情境，並以 PikPak 作為主要實測來源之一；夸克網盤、迅雷網盤等在能透過 OpenList / AList 正常輸出 STRM、直鏈或 302 時也屬於適用場景。</p>
+</div>
+
+<h2>常見問題</h2>
+<h3>Jellyfin STRM 起播很慢，可以改善嗎？</h3>
+<p>如果延遲主要發生在 Jellyfin 播放 STRM 的準備階段，StrmFastPlay 就是針對這類情境設計。</p>
+
+<h3>會提升網盤頻寬嗎？</h3>
+<p>不會。來源網速、CDN 與網路品質仍由外部服務決定。</p>
+
+<h3>核心技術是否公開？</h3>
+<p>公開文件只說明產品行為、安裝、相容性與支援情境。商業版本的核心最佳化演算法與實作細節不公開。</p>
+
+<p class="muted">Jellyfin STRM · Jellyfin STRM slow startup · Jellyfin playback speed · OpenList · AList · PikPak · 夸克網盤 · Quark Cloud Drive · 迅雷網盤 · Xunlei · Thunder Cloud Drive · Jellyfin remote media · Jellyfin plugin</p>
+</body>
+</html>
