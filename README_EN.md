@@ -13,13 +13,12 @@ These are common target scenarios, not a claim that every provider has been full
 
 ### Jellyfin repository (recommended)
 
-Add this URL to your Jellyfin repositories:
+When adding the Jellyfin repository, enter:
 
-```text
-https://skillgodak.github.io/StrmFastPlay/manifest.json
-```
+- Name: `StrmFastPlay`
+- Repository URL: `https://skillgodak.github.io/StrmFastPlay/manifest.json`
 
-Then open Dashboard → Plugins → All, search for `StrmFastPlay`, and install it. Fully restart Jellyfin after installation. Future releases can be installed through Jellyfin's plugin update feature.
+After saving, open Dashboard → Plugins → All, search for `StrmFastPlay`, and install it. Fully restart Jellyfin after installation. Future releases can be installed through Jellyfin's plugin update feature.
 
 ### Manual installation
 
