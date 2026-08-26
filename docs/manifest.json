@@ -13,7 +13,7 @@
         "changelog": "**本版更新**\n\n- 改善代理連線相容性與首次播放穩定性。\n\n**安裝**\n\n下載 `StrmFastPlay.zip`，將 DLL 與 `meta.json` 兩個檔案一起解壓縮到 `jellyfin/config/plugins/StrmFastPlay/`，再完整重新啟動 Jellyfin。",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://github.com/SkillGodAk/StrmFastPlay/releases/download/v1.0.11/StrmFastPlay.zip",
-        "checksum": "E1D83F54FB03472489B468B0B5FF3122",
+        "checksum": "842CC48BB82CD193361E09E33C588774",
         "timestamp": "2026-08-26T06:21:17Z"
       }
     ]
