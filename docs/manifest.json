@@ -15,6 +15,14 @@
         "sourceUrl": "https://github.com/SkillGodAk/StrmFastPlay/releases/download/v1.0.11/StrmFastPlay.zip",
         "checksum": "842CC48BB82CD193361E09E33C588774",
         "timestamp": "2026-08-26T06:21:17Z"
+      },
+      {
+        "version": "1.0.10.0",
+        "changelog": "**本版更新**\n\n- 改善 STRM 起播速度。\n- 新增下一集預先加速，劇集播放到 80% 時自動準備下一集。\n- 提升 OpenList／AList 搭配各大網盤來源的播放體驗。\n- 修正 Jellyfin 暫停或啟用插件時的錯誤。\n\n**安裝**\n\n下載 `StrmFastPlay.zip`，將 DLL 與 `meta.json` 兩個檔案一起解壓縮到 `jellyfin/config/plugins/StrmFastPlay/`，再完整重新啟動 Jellyfin。",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/SkillGodAk/StrmFastPlay/releases/download/v1.0.10/StrmFastPlay.zip",
+        "checksum": "8CFFC679561CD3F0893AFB341B662BF7",
+        "timestamp": "2026-08-13T04:53:59Z"
       }
     ]
   }
