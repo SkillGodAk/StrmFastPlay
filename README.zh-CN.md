@@ -25,12 +25,13 @@ StrmFastPlay 针对 Jellyfin 远程 STRM / 网盘播放流程进行优化，目�
 
 ### Jellyfin 存储库安装（推荐）
 
-在 Jellyfin 控制台依次打开“插件”→“存储库”→“新增”，填写：
+先将以下网址加入 Jellyfin 存储库：
 
-- 名称：`StrmFastPlay`
-- 存储库网址：`https://skillgodak.github.io/StrmFastPlay/manifest.json`
+```text
+https://skillgodak.github.io/StrmFastPlay/manifest.json
+```
 
-保存后到插件目录安装 StrmFastPlay，并完整重启 Jellyfin。后续新版本可通过 Jellyfin 插件更新功能安装。
+加入后依次打开“控制台”→“扩展功能”→“全部”，搜索 `StrmFastPlay` 并安装。安装完成后完整重启 Jellyfin；后续新版本可通过 Jellyfin 插件更新功能安装。
 
 ### 手动安装
 
