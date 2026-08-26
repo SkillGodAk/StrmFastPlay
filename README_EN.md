@@ -9,20 +9,23 @@ Typical scenarios include OpenList / AList and remote sources such as PikPak, Qu
 
 These are common target scenarios, not a claim that every provider has been fully tested.
 
-## Common search queries
+## Installation
 
-- Jellyfin cloud drive playback acceleration
-- Jellyfin cloud storage playback slow
-- Jellyfin remote media slow startup
-- Jellyfin STRM playback acceleration
-- Jellyfin STRM slow startup
-- Jellyfin OpenList playback acceleration
-- Jellyfin PikPak playback acceleration
-- Jellyfin Quark Cloud Drive playback
-- Jellyfin Xunlei playback
-- Jellyfin 115 playback
-- Jellyfin 123Pan playback
+### Jellyfin repository (recommended)
 
-## Download
+In the Jellyfin dashboard, open Plugins → Repositories → Add and enter:
 
-https://github.com/SkillGodAk/StrmFastPlay/releases
+- Name: `StrmFastPlay`
+- Repository URL: `https://skillgodak.github.io/StrmFastPlay/manifest.json`
+
+Save the repository, install StrmFastPlay from the plugin catalog, and fully restart Jellyfin. Future releases can be installed through Jellyfin's plugin update feature.
+
+### Manual installation
+
+[Open GitHub Releases](https://github.com/SkillGodAk/StrmFastPlay/releases), download `StrmFastPlay.zip`, and extract the DLL and `meta.json` to:
+
+```text
+jellyfin/config/plugins/StrmFastPlay/
+```
+
+Fully restart Jellyfin to load the plugin.

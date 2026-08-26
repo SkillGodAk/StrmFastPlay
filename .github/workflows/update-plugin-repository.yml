@@ -1,0 +1,95 @@
+name: Update Jellyfin Plugin Repository
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to publish in the Jellyfin repository
+        required: true
+        default: v1.0.11
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download release metadata and package
+        run: |
+          set -euo pipefail
+          mkdir -p .repository-update
+          gh release download "$RELEASE_TAG" --pattern StrmFastPlay.zip --dir .repository-update --clobber
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" > .repository-update/release.json
+
+      - name: Update manifest
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+
+          manifest_path = Path("docs/manifest.json")
+          package_path = Path(".repository-update/StrmFastPlay.zip")
+          release = json.loads(Path(".repository-update/release.json").read_text(encoding="utf-8"))
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+          tag = os.environ["RELEASE_TAG"]
+          parts = tag.removeprefix("v").split(".")
+          if not parts or any(not part.isdigit() for part in parts) or len(parts) > 4:
+              raise SystemExit(f"Unsupported release tag: {tag}")
+          version = ".".join(parts + ["0"] * (4 - len(parts)))
+          checksum = hashlib.md5(package_path.read_bytes()).hexdigest().upper()
+          source_url = next(asset["browser_download_url"] for asset in release["assets"] if asset["name"] == "StrmFastPlay.zip")
+          changelog = (release.get("body") or "StrmFastPlay update.").strip()
+
+          entry = {
+              "version": version,
+              "changelog": changelog,
+              "targetAbi": "10.11.0.0",
+              "sourceUrl": source_url,
+              "checksum": checksum,
+              "timestamp": release.get("published_at") or release["created_at"],
+          }
+          versions = [item for item in manifest[0]["versions"] if item["version"] != version]
+          versions.append(entry)
+          versions.sort(key=lambda item: tuple(int(part) for part in item["version"].split(".")), reverse=True)
+          manifest[0]["versions"] = versions
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
+
+      - name: Commit manifest
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- docs/manifest.json; then
+            exit 0
+          fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/manifest.json
+          git commit -m "chore: update Jellyfin plugin repository for $RELEASE_TAG"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

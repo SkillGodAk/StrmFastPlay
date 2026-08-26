@@ -21,9 +21,26 @@ StrmFastPlay 针对 Jellyfin 远程 STRM / 网盘播放流程进行优化，目�
 ### 支持哪些网盘？
 只要能通过 OpenList / AList 或其他兼容方式正常提供 STRM、直链或 302 播放，就属于适用场景。
 
-## 下载
+## 安装
 
-https://github.com/SkillGodAk/StrmFastPlay/releases
+### Jellyfin 存储库安装（推荐）
+
+在 Jellyfin 控制台依次打开“插件”→“存储库”→“新增”，填写：
+
+- 名称：`StrmFastPlay`
+- 存储库网址：`https://skillgodak.github.io/StrmFastPlay/manifest.json`
+
+保存后到插件目录安装 StrmFastPlay，并完整重启 Jellyfin。后续新版本可通过 Jellyfin 插件更新功能安装。
+
+### 手动安装
+
+[前往 GitHub Releases](https://github.com/SkillGodAk/StrmFastPlay/releases) 下载 `StrmFastPlay.zip`，将 ZIP 内的 DLL 与 `meta.json` 解压到：
+
+```text
+jellyfin/config/plugins/StrmFastPlay/
+```
+
+完整重启 Jellyfin 后即可加载。
 
 ## 推广回馈
 

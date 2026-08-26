@@ -66,13 +66,20 @@ StrmFastPlay 針對 Jellyfin 遠端 STRM / 網盤播放流程進行最佳化，�
 ### 支援哪些網盤？
 適用於能透過 OpenList / AList 或其他相容方式提供 STRM、直鏈或 302 播放的來源。常見場景包含 PikPak、夸克、迅雷、115、123、光鴨、阿里雲盤、百度網盤、天翼雲盤等。
 
-## 下載
-
-[前往 GitHub Releases](https://github.com/SkillGodAk/StrmFastPlay/releases)
-
 ## 安裝
 
-將 Release ZIP 內容解壓縮到：
+### Jellyfin 儲存庫安裝（建議）
+
+在 Jellyfin 控制台依序開啟「插件」→「儲存庫」→「新增」，填入：
+
+- 名稱：`StrmFastPlay`
+- 儲存庫網址：`https://skillgodak.github.io/StrmFastPlay/manifest.json`
+
+儲存後到插件目錄安裝 StrmFastPlay，並完整重新啟動 Jellyfin。後續新版本可由 Jellyfin 插件更新功能安裝。
+
+### 手動安裝
+
+[前往 GitHub Releases](https://github.com/SkillGodAk/StrmFastPlay/releases) 下載 `StrmFastPlay.zip`，將 ZIP 內的 DLL 與 `meta.json` 解壓縮到：
 
 ```text
 jellyfin/config/plugins/StrmFastPlay/
