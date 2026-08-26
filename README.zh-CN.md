@@ -13,22 +13,6 @@ PikPak、夸克网盘、迅雷网盘、115 网盘、123 网盘、光鸭网盘、
 
 以上仅代表常见适用场景，不等于全部来源都经过完整实测。
 
-## 常见搜索问题
-
-- Jellyfin 网盘播放加速
-- Jellyfin 网盘播放慢
-- Jellyfin 网盘秒播
-- Jellyfin 起播慢
-- Jellyfin 秒播插件
-- Jellyfin STRM 播放加速
-- Jellyfin OpenList 播放加速
-- Jellyfin PikPak 播放加速
-- Jellyfin 夸克网盘播放加速
-- Jellyfin 迅雷网盘播放加速
-- Jellyfin 115 播放加速
-- Jellyfin 123 网盘播放加速
-- Jellyfin 光鸭网盘播放加速
-
 ## FAQ
 
 ### Jellyfin 网盘播放很慢怎么办？
@@ -37,9 +21,10 @@ StrmFastPlay 针对 Jellyfin 远程 STRM / 网盘播放流程进行优化，目�
 ### 支持哪些网盘？
 只要能通过 OpenList / AList 或其他兼容方式正常提供 STRM、直链或 302 播放，就属于适用场景。
 
-### 核心技术公开吗？
-不公开。公开仓库主要用于产品信息、下载、FAQ 与使用文档。
-
 ## 下载
 
 https://github.com/SkillGodAk/StrmFastPlay/releases
+
+## 推广回馈
+
+发布 StrmFastPlay 推广介绍文章后，联系作者并提供发布证明，可免费获得一张月卡（1 个月）。

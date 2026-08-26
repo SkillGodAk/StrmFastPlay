@@ -11,8 +11,6 @@
 
 適用於透過 OpenList / AList 或其他相容方式提供 STRM、直鏈或 302 播放的遠端媒體來源。
 
-> 公開文件只說明產品功能、適用場景、安裝與相容性；核心最佳化演算法與實作細節不公開。
-
 ## 主要功能
 
 - Jellyfin STRM 播放加速
@@ -57,28 +55,6 @@
 
 以上僅代表常見適用情境，不等於全部來源都經過完整實測。實際效果取決於來源是否能正常播放、直鏈品質、CDN、網路、字幕與媒體格式。
 
-## 常見搜尋問題
-
-- Jellyfin 網盤播放加速
-- Jellyfin 网盘播放加速
-- Jellyfin 網盤播放很慢
-- Jellyfin 网盘播放慢
-- Jellyfin 網盤秒播
-- Jellyfin 网盘秒播
-- Jellyfin 起播慢
-- Jellyfin 秒播插件
-- Jellyfin STRM 播放加速
-- Jellyfin STRM 起播加速
-- Jellyfin STRM 播放很慢
-- Jellyfin OpenList 播放加速
-- Jellyfin AList 播放加速
-- Jellyfin PikPak 播放加速
-- Jellyfin 夸克網盤播放加速
-- Jellyfin 迅雷網盤播放加速
-- Jellyfin 115 播放加速
-- Jellyfin 123 網盤播放加速
-- Jellyfin 光鴨網盤播放加速
-
 ## FAQ
 
 ### Jellyfin 網盤播放很慢怎麼辦？
@@ -89,9 +65,6 @@ StrmFastPlay 針對 Jellyfin 遠端 STRM / 網盤播放流程進行最佳化，�
 
 ### 支援哪些網盤？
 適用於能透過 OpenList / AList 或其他相容方式提供 STRM、直鏈或 302 播放的來源。常見場景包含 PikPak、夸克、迅雷、115、123、光鴨、阿里雲盤、百度網盤、天翼雲盤等。
-
-### 核心技術公開嗎？
-不公開。公開倉庫主要提供產品資訊、下載、FAQ 與使用文件；核心實作不公開。
 
 ## 下載
 
@@ -126,14 +99,12 @@ Docker 範例：
 - QQ 群：`1018495751`
 - TG 群：[點此加入](https://t.me/+l1v_7ag4mJQ3NjI1)
 
+## 推廣回饋
+
+發布 StrmFastPlay 推廣介紹文章後，聯絡作者並提供發布證明，可免費獲得一張月卡（1 個月）。
+
 ## PikPak 邀請碼
 
 ```text
 34544273
 ```
-
-## 智慧財產聲明
-
-StrmFastPlay 的核心演算法、最佳化策略、授權機制與非公開實作細節均屬作者所有。
-
-StrmFastPlay 是獨立第三方專案，並非 Jellyfin、OpenList、AList 或各網盤服務的官方產品。
