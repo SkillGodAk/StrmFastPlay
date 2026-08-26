@@ -71,7 +71,7 @@ jobs:
           versions = [item for item in manifest[0]["versions"] if item["version"] != version]
           versions.append(entry)
           versions.sort(key=lambda item: tuple(int(part) for part in item["version"].split(".")), reverse=True)
-          manifest[0]["versions"] = versions
+          manifest[0]["versions"] = versions[:2]
           manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           PY
 
@@ -86,6 +86,19 @@ jobs:
           git add docs/manifest.json
           git commit -m "chore: update Jellyfin plugin repository for $RELEASE_TAG"
           git push
+
+      - name: Keep latest two releases
+        run: |
+          set -euo pipefail
+          gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq '.[] | select(.draft == false and .prerelease == false) | .tag_name' \
+            | sort --version-sort --reverse \
+            | tail --lines=+3 \
+            > .repository-update/obsolete-release-tags.txt
+
+          while IFS= read -r tag; do
+            [ -z "$tag" ] || gh release delete "$tag" --cleanup-tag --yes
+          done < .repository-update/obsolete-release-tags.txt
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
