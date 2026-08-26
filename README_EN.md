@@ -29,3 +29,9 @@ jellyfin/config/plugins/StrmFastPlay/
 ```
 
 Fully restart Jellyfin to load the plugin.
+
+## Promotion reward
+
+1. Contact the author before publishing to receive a unique promotion username and posting instructions.
+2. Publish an article introducing StrmFastPlay to receive one free monthly license.
+3. Publish a video that genuinely introduces StrmFastPlay to receive one free six-month license.
