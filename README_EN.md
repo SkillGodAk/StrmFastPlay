@@ -30,6 +30,29 @@ jellyfin/config/plugins/StrmFastPlay/
 
 Fully restart Jellyfin to load the plugin.
 
+## Trial and pricing
+
+New installations include a 7-day free trial.
+
+- Monthly license: RMB 5 / TWD 25
+- Six-month license: RMB 15 / TWD 75
+- Annual license: RMB 30 / TWD 150
+
+Contact the author:
+
+- QQ group: `1018495751`
+- Telegram group: [Join here](https://t.me/+l1v_7ag4mJQ3NjI1)
+
+### International payments (Buy Me a Coffee)
+
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee international payment" width="180"></a>
+
+### WeChat payment
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="WeChat payment QR code" width="180">
+
+Contact the author through QQ or Telegram before paying to confirm the plan, amount, and license activation arrangements.
+
 ## Promotion reward
 
 1. Contact the author before publishing to receive a unique promotion username and posting instructions.
