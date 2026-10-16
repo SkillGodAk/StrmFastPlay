@@ -42,6 +42,29 @@ jellyfin/config/plugins/StrmFastPlay/
 
 完整重启 Jellyfin 后即可加载。
 
+## 试用与价格
+
+首次安装可免费试用 7 天。
+
+- 月卡：5 RMB / 台币 25 元
+- 半年卡：15 RMB / 台币 75 元
+- 年卡：30 RMB / 台币 150 元
+
+联系作者：
+
+- QQ 群：`1018495751`
+- TG 群：[点击加入](https://t.me/+l1v_7ag4mJQ3NjI1)
+
+### 海外付款（Buy Me a Coffee）
+
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee 海外付款" width="180"></a>
+
+### 微信收款
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="微信收款二维码" width="180">
+
+购买前请先通过上述 QQ 群或 TG 群联系作者，确认套餐、付款金额及授权方式。
+
 ## 推广回馈
 
 1. 推广前先联系作者，取得专属“推广用户名”与发布方式。
