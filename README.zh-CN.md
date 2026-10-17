@@ -59,15 +59,6 @@ jellyfin/config/plugins/StrmFastPlay/
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-### 微信赞助
-
-<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="微信赞助二维码" width="180">
-
-### 台湾赞助
-
-<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="台湾赞助二维码" width="180">
-
-
 购买前请先通过上述 QQ 群或 TG 群联系作者，确认套餐、付款金额及授权方式。
 
 ## 推广回馈

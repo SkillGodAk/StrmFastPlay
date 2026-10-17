@@ -47,15 +47,6 @@ Contact the author:
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-### WeChat support
-
-<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="WeChat donation QR code" width="180">
-
-### Taiwan support
-
-<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="Taiwan donation QR code" width="180">
-
-
 Contact the author through QQ or Telegram before paying to confirm the plan, amount, and license activation arrangements.
 
 ## Promotion reward
