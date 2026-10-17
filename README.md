@@ -106,13 +106,17 @@ Docker 範例：
 - QQ 群：`1018495751`
 - TG 群：[點此加入](https://t.me/+l1v_7ag4mJQ3NjI1)
 
-### 海外付款（Buy Me a Coffee）
+### 國外贊助
 
-<a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee 海外付款" width="180"></a>
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-### 微信收款
+### 微信贊助
 
-<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="微信收款 QR Code" width="180">
+<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="微信贊助 QR Code" width="180">
+
+### 台灣贊助
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="台灣贊助 QR Code" width="180">
 
 購買前請先透過上述 QQ 群或 TG 群聯絡作者，確認方案、付款金額與授權方式。
 
