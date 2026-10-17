@@ -110,6 +110,14 @@ Docker 範例：
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
+### 微信贊助
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/HGTV/main/assets/donate-wechat.jpg" alt="微信贊助 QR Code" width="180">
+
+### 台灣贊助
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="台灣贊助 QR Code" width="180">
+
 購買前請先透過上述 QQ 群或 TG 群聯絡作者，確認方案、付款金額與授權方式。
 
 ## 推廣回饋
